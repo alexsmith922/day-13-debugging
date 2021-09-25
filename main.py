@@ -24,18 +24,19 @@
   #code block did not account for someone that was born in 1994. Added <= to line 20
 
 # # Fix the Errors
-age = int(input("How old are you?"))
-if age >= 18:
-  print(f"You can drive at age {age}.")
-  #needed indentation at line 29, >= on line 28, convert str to int on line 27
+# age = int(input("How old are you?"))
+# if age >= 18:
+#   print(f"You can drive at age {age}.")
+#   #needed indentation at line 29, >= on line 28, convert str to int on line 27
 
 # #Print is Your Friend
-# pages = 0
-# word_per_page = 0
-# pages = int(input("Number of pages: "))
-# word_per_page == int(input("Number of words per page: "))
-# total_words = pages * word_per_page
-# print(total_words)
+pages = 0
+word_per_page = 0
+pages = int(input("Number of pages: "))
+word_per_page = int(input("Number of words per page: "))
+total_words = pages * word_per_page
+print(total_words)
+  #== is used in if loops and check if one side equals another. Use = for assignment.
 
 # #Use a Debugger
 # def mutate(a_list):
