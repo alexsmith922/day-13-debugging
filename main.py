@@ -16,17 +16,18 @@
 #   #randint() was occasionally returning 6, which is out of range of dice_imgs
 
 # Play Computer
-year = int(input("What's your year of birth?: "))
-if year > 1980 and year <= 1994:
-  print("You are a millenial.")
-elif year > 1994:
-  print("You are a Gen Z.")
+# year = int(input("What's your year of birth?: "))
+# if year > 1980 and year <= 1994:
+#   print("You are a millenial.")
+# elif year > 1994:
+#   print("You are a Gen Z.")
   #code block did not account for someone that was born in 1994. Added <= to line 20
 
 # # Fix the Errors
-# age = input("How old are you?")
-# if age > 18:
-# print("You can drive at age {age}.")
+age = int(input("How old are you?"))
+if age >= 18:
+  print(f"You can drive at age {age}.")
+  #needed indentation at line 29, >= on line 28, convert str to int on line 27
 
 # #Print is Your Friend
 # pages = 0
