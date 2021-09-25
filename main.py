@@ -1,18 +1,19 @@
 ############DEBUGGING#####################
 
-# Describe Problem
-def my_function():
-  for i in range(1, 21):
-    if i == 20:
-      print("You got it")
-my_function()
-  #function is suppoed to print 20 only when i = 20, but range() won't ever go to 20
+# # Describe Problem
+# def my_function():
+#   for i in range(1, 21):
+#     if i == 20:
+#       print("You got it")
+# my_function()
+#   #function is suppoed to print 20 only when i = 20, but range() won't ever go to 20
 
 # # Reproduce the Bug
-# from random import randint
-# dice_imgs = ["❶", "❷", "❸", "❹", "❺", "❻"]
-# dice_num = randint(1, 6)
-# print(dice_imgs[dice_num])
+from random import randint
+dice_imgs = ["❶", "❷", "❸", "❹", "❺", "❻"]
+dice_num = randint(0, 5)
+print(dice_imgs[dice_num])
+  #randint() was occasionally returning 6, which is out of range of dice_imgs
 
 # # Play Computer
 # year = int(input("What's your year of birth?"))
